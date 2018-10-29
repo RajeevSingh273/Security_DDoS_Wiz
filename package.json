@@ -1,0 +1,40 @@
+{
+  "name": "CoreNextGen.API.Node.service",
+  "version": "1.0.0",
+  "description": "CoreNextGen API for Data Service",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon --exec \"mocha -R min\"",
+    "start": "nodemon main.js",
+    "debug": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "atob": "^2.1.1",
+    "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.17",
+    "mongoose": "^5.1.1",
+    "mongorepository": "^1.1.1",
+    "mssql": "^4.1.0",
+    "request": "^2.83.0",
+    "simple-encryptor": "^1.1.1",
+    "sqlstring": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "chai-like": "^1.1.1",
+    "chai-sorted": "^0.2.0",
+    "chai-things": "^0.2.0",
+    "nodemon": "^1.12.1",
+    "should": "^13.2.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "database": {
+    "mongodb": "mongodb://localhost:27304/Support",
+    "TodoCollection": "Todo",
+    "AttackCollection": "Attack"
+  },
+  "authorization": {
+    "mapping": [
+      {
+        "key": "instanceName",
+        "value": "MachineName"
+      },
+      {
+        "key": "localhost",
+        "value": "localhost"
+      }
+    ],
+    "sessionData": "20181029",
+    "sessionTimeOutInMinutes": 10,
+    "enableLogin": false
+  },
+  "httpMethodName": {
+    "getMethod": "GET",
+    "putMethod": "PUT",
+    "postMethod": "POST",
+    "deleteMethod": "DELETE"
+  },
+  "mailOptions": {
+    "host": "hostname",
+    "port": 465,
+    "user": "username",
+    "pass": "password"
+  },
+  "webServerPort": 3000
+}

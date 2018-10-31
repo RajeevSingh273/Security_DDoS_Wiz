@@ -7,7 +7,7 @@ var todoRoutes = require("./api/routes/todo.Routes");
 var attackDataRoutes=require("./api/routes/attackData.Routes");
 
 var todoCollection = require("./data.layer/dbModel/todo.model");
-var attackDataCollection = require("./data.layer/dbModel/attackData.model");
+var attackDataCollection = require("./data.layer/dbModel/attack.model");
 
 var config = require("config");
 var WebServerApi = (function () {

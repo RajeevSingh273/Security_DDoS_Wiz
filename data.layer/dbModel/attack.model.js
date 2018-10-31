@@ -36,7 +36,7 @@ var attackList = new mongoose.Schema({
         type: String
     },
     ongoing: {
-        type: boolean,
+        type: Boolean,
         default: false
     },
     sourceip: SourceIP

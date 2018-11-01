@@ -9,24 +9,28 @@ var AttackDataApi = (function () {
     }
 
     AttackDataApi.prototype.GetAttackDataIP = function (query) {
-        console.log("in remote API");
-        Request.get("http://httpbin.org/ip", (error, response, body) => {
-            if (error) {
-                return console.dir(error);
-            }
-            console.dir(JSON.parse(body));
-        });
+        // console.log("in remote API");
+        // Request.get("http://httpbin.org/ip", (error, response, body) => {
+        //     if (error) {
+        //         console.log(error);
+        //         return error;
+        //     }else{
+        //         console.log(JSON.parse(body));
+        //         return body;
+        //     }
+            
+        // });
         return new Promise(function (resolve, reject) {
             Request.get("http://httpbin.org/ip", (error, response, body) => {
-                console.log("error:", error);
-                console.log("response:", response);
-                console.log("Body:", body);
-                if (error) {
+                
+                //console.log("response:", response);
+               
+                if (error) {console.log("error:", error);
                     resolve(error);
-                } else {
+                } else { console.log("Body:", body);
                     resolve(JSON.parse(body));
                 }
-                console.dir(JSON.parse(body));
+                //console.dir(JSON.parse(body));
             });
         }).catch(function (e) {
             throw e;
@@ -42,7 +46,7 @@ var AttackDataApi = (function () {
                 } else {
                     resolve(JSON.parse(body));
                 }
-                console.dir(JSON.parse(body));
+                //console.dir(JSON.parse(body));
             });
         }).catch(function (e) {
             throw e;
